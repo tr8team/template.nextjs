@@ -32,3 +32,25 @@ jobs:
           fetch-depth: 0
       - name: Run pre-commit
         run: nix develop .#ci -c ./scripts/ci/pre-commit.sh
+  release:
+    name: Semantic Release Helm Chart
+    needs:
+      - test
+      - precommit
+    if: github.ref == 'refs/heads/main'
+    runs-on:
+      - ARM64
+      - nix
+    steps:
+      - name: Gotrade CI Environment
+        uses: kirinnee/atomici-action@v2.3.1
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_TOKEN_SEMANTIC_RELEASE }}
+          fetch-depth: 0
+      - name: Inject Github Variables
+        uses: rlespinasse/github-slug-action@v3.x
+
+      - name: Release
+        run: nix develop .#ci -c scripts/ci/release.sh

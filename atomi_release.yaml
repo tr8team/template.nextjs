@@ -23,12 +23,6 @@ plugins:
   - module: "@semantic-release/changelog"
     config:
       changelogFile: Changelog.md
-  - module: "@semantic-release/exec"
-    config:
-      prepareCmd: scripts/ci/helm.sh ${nextRelease.version}
-  - module: "@semantic-release/exec"
-    config:
-      prepareCmd: scripts/ci/readme.sh ${nextRelease.version}
   - module: "@semantic-release/git"
     config:
       message: "release: ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
@@ -40,7 +34,7 @@ plugins:
 
 types:
   - type: fix
-    section: Bug Fixes
+    section: 🐛 Bug Fixes 🐛
     desc: Fixes bug in repository
     vae:
       verb: fix
@@ -67,7 +61,7 @@ types:
         desc: Automated testing
         release: false
   - type: feat
-    section: Features
+    section: 🚀 Features 🚀
     desc: Adds a new feature into the action
     vae:
       verb: add
@@ -92,7 +86,7 @@ types:
 
   - type: docs
     desc: Add documentation
-    section: Documentation Updates
+    section: 📝 Documentation 📝
     vae:
       verb: document
       application: <title>

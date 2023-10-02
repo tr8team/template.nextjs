@@ -32,7 +32,6 @@ with packages;
   ];
 
   ci = [
-    wrangler
     node
     sg
     npm
