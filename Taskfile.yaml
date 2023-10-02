@@ -1,0 +1,23 @@
+version: "3"
+
+tasks:
+  setup:
+    desc: Setup dependencies
+    cmds:
+      - bun install
+  dev:
+    desc: Start development
+    cmds:
+      - bun run --bun dev
+  test:
+    desc: Start unit test
+    cmds:
+      - bun test
+  test:watch:
+    desc: Start watch tests
+    cmds:
+      - bun test --watch
+  test:cover:
+    desc: Start unit test with coverage
+    cmds:
+      - bun test --coverage
