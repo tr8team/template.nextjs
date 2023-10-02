@@ -53,4 +53,6 @@ jobs:
         uses: rlespinasse/github-slug-action@v3.x
 
       - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN_SEMANTIC_RELEASE }}
         run: nix develop .#ci -c scripts/ci/release.sh
