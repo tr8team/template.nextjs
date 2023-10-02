@@ -34,7 +34,6 @@ with packages;
   ci = [
     node
     sg
-    npm
     yq-go
     jq
   ];

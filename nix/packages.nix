@@ -37,6 +37,7 @@ let
 
           #infra
           ;
+        node = nodejs_20;
         helm = kubernetes-helm;
         eslint = nodePackages_latest.eslint;
       }
