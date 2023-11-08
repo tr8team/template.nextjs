@@ -80,6 +80,22 @@ pre-commit-lib.run {
       language = "system";
       pass_filenames = true;
     };
+
+    a-nextlint = {
+      enable = true;
+      name = "Next Lint";
+      entry = "${packages.bun}/bin/bun run lint";
+      language = "system";
+      pass_filenames = false;
+    };
+
+    a-next-build = {
+      enable = true;
+      name = "Next Build";
+      entry = "${packages.bun}/bin/bun run precommit-build";
+      language = "system";
+      pass_filenames = false;
+    };
   };
 
   settings = {

@@ -21,6 +21,7 @@ with packages;
   main = [
     infisical
     bun
+    node
   ];
 
   lint = [
