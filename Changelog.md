@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/tr8team/template.nextjs/compare/v1.0.0...v1.0.1) (2023-11-08)
+
+
+### 🐛 Bug Fixes 🐛
+
+* pre-commit improvements ([482327f](https://github.com/tr8team/template.nextjs/commit/482327f61f44af75188374c311ef354d313d0d1b))
+
 ## 1.0.0 (2023-10-02)
 
 
