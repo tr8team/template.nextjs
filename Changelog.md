@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/tr8team/template.nextjs/compare/v1.0.1...v1.0.2) (2023-11-17)
+
+
+### 🐛 Bug Fixes 🐛
+
+* dependabot, https ([fa4d7d4](https://github.com/tr8team/template.nextjs/commit/fa4d7d4f54dabe1769aaacd308ce80a2a9376028))
+
 ## [1.0.1](https://github.com/tr8team/template.nextjs/compare/v1.0.0...v1.0.1) (2023-11-08)
 
 
