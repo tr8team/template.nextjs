@@ -8,7 +8,7 @@ tasks:
   dev:
     desc: Start development
     cmds:
-      - bun run --bun dev
+      - bun run dev
   test:
     desc: Start unit test
     cmds:
